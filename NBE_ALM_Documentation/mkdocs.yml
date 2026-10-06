@@ -1,0 +1,55 @@
+site_name: NBE ALM Simulation Center
+site_description: Technical documentation for the NBE Asset-Liability Management simulation prototype
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: green
+      accent: orange
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.integrate
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            show_source: false
+            docstring_style: google
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Overview: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Database Design: database.md
+  - Calculation Engine: calculation-engine.md
+  - Scenarios: scenarios.md
+  - Analytics & Validation: analytics.md
+  - User Interface: ui.md
+  - Security: security.md
+  - Design Decisions: decisions.md
+  - Limitations & Roadmap: limitations.md
+  - FAQ: faq.md
+  - API Reference:
+      - config: api/config.md
+      - calculations: api/calculations.md
+      - database: api/database.md
+      - scenarios: api/scenarios.md
+      - analytics: api/analytics.md
+      - ui: api/ui.md
