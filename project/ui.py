@@ -369,7 +369,6 @@ def run_app():
     if DOCS_ENABLED:
         st.sidebar.markdown("**Documentation**")
         with st.sidebar:
-            current_doc = PAGE_DOCS.get(_selected_nav, "")
             st.write("") # مسافة صغيرة
             doc_button("", "📚 Full documentation")
 
