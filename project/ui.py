@@ -367,10 +367,9 @@ def run_app():
     _selected_nav = st.session_state.get("main_page", "Executive Dashboard")
 
     if DOCS_ENABLED:
-        st.sidebar.markdown("**HELP**")
+        st.sidebar.markdown("**Documentation**")
         with st.sidebar:
             current_doc = PAGE_DOCS.get(_selected_nav, "")
-            doc_button(current_doc, "📘 Page documentation")
             st.write("") # مسافة صغيرة
             doc_button("", "📚 Full documentation")
 
