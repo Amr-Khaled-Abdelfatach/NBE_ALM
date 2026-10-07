@@ -154,7 +154,11 @@ NBE_PALETTE = [NBE_GREEN, NBE_ORANGE, NBE_DARK_GREEN, "#2E8B57", "#F6A64B", "#73
 
 # Documentation Setup
 DOCS_ENABLED = True
+<<<<<<< HEAD
 DOCS_BASE_URL = "https://amr-khaled-abdelfatach.github.io/NBE_ALM/"
+=======
+DOCS_BASE_URL = "https://ahmed01hashem.github.io/nbe-alm-docs/"
+>>>>>>> 445a1202e56a5da21c6bd67d8909b0ee37dd68e3
 
 PAGE_DOCS = {
     "Executive Dashboard": "",
